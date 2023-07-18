@@ -2,7 +2,7 @@ const arr = [] //Database;
 const bcyrpt = require("bcrypt");
 const saltround = 10;
 const jwt = require ('jsonwebtoken')
-// const secretKey = process.env.seacreatKey
+const secretKey = process.env.seacreatKey
 // const dotenv = require('dotenv')
 // dotenv.config()
 
@@ -28,7 +28,7 @@ const ragister = (req, res)=>{
         return res.send("User already exist please try to login!!")
     }
 
-    const token = jwt.sign({userEmail :RjData.email}, secretKey, {expiresIn : '360m'})
+    const token = jwt.sign({userEmail :RjData.email}, process.env.seacreatKey, {expiresIn : '360m'})
     arr.push(tempObj);
     console.log(arr);
     return res.send({msg : "user ragister", token: token})
