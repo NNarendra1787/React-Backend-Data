@@ -1,5 +1,5 @@
 const Category = (req, res)=>{
-    return res.send({
+    return res.send([{
       "hollywood": [
         {
           "source": {
@@ -2603,7 +2603,7 @@ const Category = (req, res)=>{
             "publishedAt": "2023-06-03T03:07:17Z",
             "content": "Mahabharat fame Gufi Paintal has been admitted to hospital due to heart and kidney problems. Now his brother and comedian Paintal shared a health update and said that it is \"very bad\". Speaking to AN… [+1683 chars]"
         }
-    ],
+      ],
       "technology": [
         {
           "source": {
@@ -6510,7 +6510,7 @@ const Category = (req, res)=>{
           "content": "José Mourinho, perhaps, is a pleasure better remembered than experienced. We chuckled at him wearing a wire, at him laying into Daniel Levy with the scorn that only he can muster, progressing through… [+10434 chars]"
         }
       ]
-    }
+    }]
     )
 }
 

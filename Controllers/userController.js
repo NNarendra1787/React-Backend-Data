@@ -10,22 +10,23 @@ const ragister = (req, res)=>{
     // res.send({mes: "User is ragister"})
     const RjData = req.body;
     console.log(RjData);
+
     const user = arr.find((details)=>{
         if(details.email == RjData.email){
             return details;
         }
         
     })
-
+    
+    if(user){
+        return res.send("User already exist please try to login!!")
+    }
     const hashpassword = bcyrpt.hashSync(RjData.password, saltround)
     const tempObj={
         name: RjData.name,
         email: RjData.email,
         password: hashpassword,
         contact: RjData.phone
-    }
-    if(user){
-        return res.send("User already exist please try to login!!")
     }
 
     const token = jwt.sign({userEmail :RjData.email}, process.env.seacreatKey, {expiresIn : '360m'})
@@ -49,7 +50,7 @@ const login = (req, res)=>{
     }
     const validate = bcyrpt.compareSync(LogData.password, user.password)
     if(validate){
-        const token = jwt.sign({userEmail :RjData.email}, secretKey, {expiresIn : '360m'})
+        const token = jwt.sign({userEmail: LogData.email}, process.env.seacreatKey, {expiresIn : '360m'})
         return res.send("user login")
     }
     return res.send({msg : "user ragister", token: token})

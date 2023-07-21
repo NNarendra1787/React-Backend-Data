@@ -23,8 +23,8 @@ App.listen(500, ()=>{
     console.log("Server is running on port 500");
 })
 
-// https://react-backend-data.onrender.com
-
+// https://react-backend-data.onrender.com/api/category/categries
+// with localhost - localhost:500/api/category/categries
 
 /* useEffect(()=>{
     const api="https://backendapi-kh83.onrender.com/api/category"
