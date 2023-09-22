@@ -1742,6 +1742,22 @@ const Category2 = (req, res) => {
       cat: "Technology",
     },
     {
+      id: 110,
+      name: "Reuters",
+
+      author: "Valerie Insinna",
+      title: "Boeing CEO 'not overly anxious' about Chinese narrowbody jet",
+      description:
+        'Boeing Co <a href="https://www.reuters.com/companies/BA.N" target="_blank">(BA.N)</a> CEO Dave Calhoun downplayed speculation that China\'s maiden commercial flight of its domestically produced C919 narrowbody jet could foreshadow the end of the duopoly curren…',
+      url: "https://www.reuters.com/business/aerospace-defense/boeing-ceo-not-overly-anxious-about-chinese-narrowbody-jet-2023-06-01/",
+      urlToImage:
+        "https://www.reuters.com/resizer/3YZWNxSXVH0phsZFTwl7ufEx-ng=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/PPPJKJGGBJMNDETERKX7ANYHUQ.jpg",
+      publishedAt: "2023-06-01T11:15:06Z",
+      content:
+        "CHARLESTON, South Carolina, June 1 (Reuters) - Boeing Co (BA.N) CEO Dave Calhoun downplayed speculation that China's maiden commercial flight of its domestically produced C919 narrowbody jet could fo… [+3174 chars]",
+      cat: "Technology",
+    },
+    {
       id: 109,
       name: "Khabarhub.com",
 
@@ -1756,22 +1772,6 @@ const Category2 = (req, res) => {
       publishedAt: "2023-06-01T11:15:32Z",
       content:
         "Signing ceremony of India-Nepal Joint Business Forum. KATHMANDU: The first meeting of the India-Nepal Joint Business Forum held in New Delhi on June 1 has decided to collectively develop a roadmap fo… [+4375 chars]",
-      cat: "Technology",
-    },
-    {
-      id: 110,
-      name: "Reuters",
-
-      author: "Valerie Insinna",
-      title: "Boeing CEO 'not overly anxious' about Chinese narrowbody jet",
-      description:
-        'Boeing Co <a href="https://www.reuters.com/companies/BA.N" target="_blank">(BA.N)</a> CEO Dave Calhoun downplayed speculation that China\'s maiden commercial flight of its domestically produced C919 narrowbody jet could foreshadow the end of the duopoly curren…',
-      url: "https://www.reuters.com/business/aerospace-defense/boeing-ceo-not-overly-anxious-about-chinese-narrowbody-jet-2023-06-01/",
-      urlToImage:
-        "https://www.reuters.com/resizer/3YZWNxSXVH0phsZFTwl7ufEx-ng=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/PPPJKJGGBJMNDETERKX7ANYHUQ.jpg",
-      publishedAt: "2023-06-01T11:15:06Z",
-      content:
-        "CHARLESTON, South Carolina, June 1 (Reuters) - Boeing Co (BA.N) CEO Dave Calhoun downplayed speculation that China's maiden commercial flight of its domestically produced C919 narrowbody jet could fo… [+3174 chars]",
       cat: "Technology",
     },
     {
@@ -4511,7 +4511,7 @@ const Technology = (req, res)=>{
       name: "GlobeNewswire",
 
       author: "ReportLinker",
-      title: "Biotech Ingredient Global Market Report 2023",
+      title: "Biotech Ingredient Global Market Report 20235",
       description:
         "Major players in the biotech ingredient market are Merck & Co. Inc., Sanofi S.A., AbbVie Inc., International Flavors & Fragrance (IFF) Inc., Novartis AG, Pfizer Inc., Teva Pharmaceutical Industries Ltd. Major players in the biotech ingredient market are Merck…",
       url: "https://www.globenewswire.com/news-release/2023/06/01/2680191/0/en/Biotech-Ingredient-Global-Market-Report-2023.html",
